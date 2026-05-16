@@ -1,0 +1,443 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.dribble{
+    width: 137px;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    
+}
+
+li{
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.right{
+    display: flex;
+    gap: 25px;
+}
+
+.right button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.signup{
+    background-color: transparent;
+    border: none;
+}
+
+.login{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.hero{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero h2{
+    text-align: center;
+    font-weight: 300;
+    width: 45%;
+    line-height: 30px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 90px;
+    font-weight: 400;
+    width: 50%;
+}
+
+.input input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.input input:focus{
+    outline: none;
+}
+
+
+
+.input{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #f3f3f6;
+    width: 50%;
+}
+
+.shots h1{
+    display: inline;
+    font-size: 18px;
+}
+
+.shots{
+    display: flex; 
+    align-items: center;
+    gap: 5px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #ec5e95;
+    border-radius: 50px;
+}
+
+.btn{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+}
+
+span i{
+    color: white;
+}
+
+
+.input:hover{
+    background-color: white;
+}
+
+.btn:hover{
+    background-color: white;
+}
+
+.trending{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.trending div{
+    background-color: #f3f3f6;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+.trending h3{
+    color:rgb(161, 161, 170);
+    font-weight: 400;
+}
+
+.contents{
+    padding: 20px;
+}
+
+.popular{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.popular h2{
+    font-weight: 300;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contents div h2{
+    font-size: 16px;
+}
+
+.topics{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.topics h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.filter h2{
+    font-weight: 300;
+}
+
+.active{
+    background-color: #f3f3f6;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+video{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.results div h1{
+    font-size: 16px;
+}
+
+.logo{
+    width: 9%;
+}
+
+.desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.tag{
+    display: flex;
+    background-color: #aaaaaa;
+    padding: 2px;
+}
+
+.tag p{
+    font-size: 13px;
+    color: white;
+}
+
+.name{
+    display: flex;
+    gap:7px;
+}
+
+.ri-poker-hearts-fill, .ri-eye-fill{
+    color: #aaaaaa;
+}
+
+.sign{
+    display: flex;
+    justify-content: center;
+}
+
+.sign button{
+    padding: 7px 20px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+}
+
+.marquee{
+    margin-top: 70px;
+    display: flex;
+    gap: 150px;
+    overflow: hidden;
+    
+}
+
+.inner{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    animation-name: marquee;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 42%;
+
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    padding: 20px;
+
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.7),
+            transparent);
+
+    transform: translateY(100%);
+    opacity: 0;
+
+    transition: 0.5s ease;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card:hover .overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+.inner img{
+    width: 120px;
+}
+
+@keyframes marquee {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+footer{
+    padding: 100px;
+    
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+footer nav h1{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.socials i{
+    font-size: 26px;
+}
+
+
+.title{
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.icons{
+    display: flex;
+    gap: 5px;
+}
+
+.icons div{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.resources,.year{
+    display: flex;
+    gap: 20px;
+}
+
+nav h1{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resources h2, .year h2{
+    color: RGB(161, 161, 170);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.reactions{
+    display: flex;
+    gap: 5px;
+}
+
+.reactions i{
+    transition: all ease 0.3s;
+}
+
+.ri-poker-hearts-fill:hover{
+    color: RGB(219, 39, 119) !important;
+}
